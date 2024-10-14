@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "my-test-cr7 "
+    bucket         = "reddy-cr7-testbucket"
     key            = "eks/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-lock-table"
